@@ -2,6 +2,8 @@ import math
 import torch
 import torch.nn as nn
 
+# culled from the tutorial building LSTM by hand on PyTorch by Piero Esposito
+# https://towardsdatascience.com/building-a-lstm-by-hand-on-pytorch-59c02a4ec091
 
 class NaiveCustomeLSTM(nn.Module):
     def __init__(self, input_sz: int, hidden_sz: int):
